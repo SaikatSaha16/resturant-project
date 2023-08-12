@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restraunt</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/homepage.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-container container">
+      <input type="checkbox" name="" id="">
+      <div class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
+      <ul class="menu-items">
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#food">Category</a></li>
+        <li><a href="#food-menu">Menu</a></li>
+        <li><a href="#testimonials">Testimonial</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="tableResevation.html"><button class="button button1">Book Table</button></a></li>
+      </ul>
+      <h1 class="logo"><a href="homepage.html"><img src="img/logoBawarchi.png" alt"...." height="42px" width="42px"></a>
+      </h1>
+    </div>
+  </nav>
+
+
+  <!-- **TAble resesrvation** -->
+  <section id="contact">
+    <from onsubmit="register()">
+    <div class="contact-container container">
+      <div class="contact-img">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpZAo6O7FY5t5gcDdujNDfztzON2IA_h95vg&usqp=CAU" alt="" />
+      </div>
+      <div class="form-container">
+        <h2>Book your table here</h2>
+        <input type="text" placeholder="Your Name" />
+        <input type="tel" placeholder="Phone no" pattern="[0-9]{10}" required />
+        <input type="email" placeholder="E-Mail" />
+        <input type="number" placeholder="Enter number of people" />
+        <textarea
+          cols="30"
+          rows="6"
+          placeholder="Type Your Message"
+        ></textarea>
+        <a href="homepage.html" class="btn btn-primary">Submit</a>
+      </div>
+    </div>
+  </from>
+  </section>
+  <footer1>
+  <div class="footer-content">  
+    <h3>© BAWARCHI by SAIKAT</h3>
+    <p>The authentic taste comes from family recipes and from fresh, simple and tasteful ingredients straight from home.</p>
+    <h5>58/1 Jadavpur Central Road, Kolkata (Calcutta) 700032 India</h5>
+    <ul class=”socials”>
+      <a href="#"><i class="fab fa-facebook-square"></i></a>
+      <a href="#"><i class="fab fa-twitter-square"></i></a>
+      <a href="#"><i class="fab fa-instagram-square"></i></a>
+      <a href="#"><i class="fab fa-youtube-square"></i></a>
+
+   </ul>
+</div>
+  </footer>
+  <script>
+    function register(){
+      alert('Successfully your from submitted');
+    }
+  </script>
+</body>
+
+</html>

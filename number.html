@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <titel> JAVA SCRIPT Number & MATH</titel>
+    </head>
+    <body>
+        <h2 id="demo1"></h2>
+        <h2 id="demo2"></h2>
+        <h2 id="demo3"></h2>
+        <h2 id="demo4"></h2>
+       <script>
+
+        // JS number
+         var num=10.5;
+         document.write(num);
+         document.write("<br>");
+         document.write( typeof num +"<br>");
+
+         var num1= new Number(12);
+         document.write(num1 +"<br>");
+         document.write(typeof num1 +"<br>");
+         var x, y, num;
+         x = parseInt(prompt("Enter the first number"));
+         y = parseInt(prompt("Enter the Second number"));
+         num = x*y;
+         document.write("Total number " +num)+"<br>";
+
+        //  JS math
+
+         document.getElementById('demo1').innerHTML=
+         Math.max(100,10,20,3,0,2000);
+         document.write("<br>");
+
+         document.getElementById('demo2').innerHTML=
+         Math.sqrt(100);
+         document.write("<br>");
+
+         document.getElementById('demo3').innerHTML=
+         Math.pow(2,10);
+         document.write("<br>");
+         
+         document.getElementById('demo4').innerHTML=
+         Math.random(0,1);
+         document.write("<br>");
+
+         //JS array
+        // Array Impliment type 1
+         var x= ["saikat" ,"saswata", "saroj", 10 , 10, 10 ];
+         document.write(x +"<br>");
+        
+        // Array Impliment type 2
+         var y=new Array();
+
+         y[0]="Saikat";
+         y[1]="Saswata";
+         y[2]="Saroj";
+         document.write(y[0]+ "<br>");
+         document.write(y[1]+ "<br>");
+         document.write(y[2]+ "<br>");
+
+         // Array Impliment type 3
+         var y=new Array("Saikat", "Saswata", "Saroj");
+
+         document.write(y[0]+ "<br>");
+         document.write(y[1]+ "<br>");
+         document.write(y[2]+ "<br>");
+        /*for loop */ 
+         for(i=0; i<=20; i++){
+            document.write(i+"<br>");
+         }
+
+        /*while loop*/ 
+         var n=1;
+         while(n<= 15){
+            document.write(n+"<br>");
+            n++;
+         }
+
+
+        /*2's table*/
+        var n=1;
+         while(n<= 10){
+
+            sum=2*n;
+            document.write("2 * "+n+"="+sum+"<br>");
+            n++;
+
+            /*JS ERROR*/ 
+
+            try{
+                document.write("Hello all");
+                alert('WELCOME');
+            }
+            catch(hey){
+                document.write(hey);
+            }
+         }  
+        </script>
+    </body>
+</html>
